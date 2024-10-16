@@ -1,0 +1,142 @@
+.color1 {
+  color: red;
+}
+.color2 {
+  color: blue;
+}
+.color3 {
+  color: green;
+}
+.color4 {
+  color: orange;
+}
+.color5 {
+  color: purple;
+}
+.spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid red; /* Red */
+  border-right: 16px solid blue; /* Blue */
+  border-bottom: 16px solid green; /* Green */
+  border-left: 16px solid orange; /* Orange */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  display: none; /* Hidden by default */
+  margin: 20px auto; /* Center the spinner */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0ceeaa;
+  margin: 0;
+  padding: 20px;
+  background-image: url(contact.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 24px;
+  margin-left: 490px;
+  background-color: rgba(255, 0, 0, 0);
+  padding: 9px;
+  width: 550px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: auto;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 8px 15px 14px rgba(0, 0, 0, 0.1);
+  background-color: #9e9e9e;
+  margin-top: 90px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: black;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: green;
+  color: black;
+}
+
+.output-message {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+p {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 24px;
+  margin-left: 490px;
+  background-color: rgba(255, 0, 0, 0);
+  padding: 9px;
+  width: 550px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
